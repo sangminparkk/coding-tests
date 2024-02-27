@@ -5,8 +5,8 @@ import java.util.stream.IntStream;
 public class P_181854_ad {
 
     public static void main(String[] args) {
-        int[] arr = {49, 12, 100, 276, 33};
-        for (int i : solution(arr, 27)) {
+        int[] arr = {444, 555, 666, 77 };
+        for (int i : solution(arr, 100)) {
             System.out.println("i = " + i);
         }
     }
