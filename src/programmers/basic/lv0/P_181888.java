@@ -10,10 +10,11 @@ public class P_181888 {
 
     }
     public static int[] solution(int[] num_list, int n) {
-        int count =  num_list.length % n == 0 ? num_list.length/n :  (num_list.length/n) + 1;
+        int count =  num_list.length % n == 0 ? num_list.length/n :  (num_list.length/n) + 1; // 이건 잘했음
         int[] answer = new int[count];
-        for (int i = 0; i < count; i+=n) {
-            answer[i] = num_list[i];
+        int idx = 0;
+        for (int i = 0; i < num_list.length; i+=n) {
+            answer[idx++] = num_list[i];
         }
         return answer;
     }
